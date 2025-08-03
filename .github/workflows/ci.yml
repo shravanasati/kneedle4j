@@ -23,6 +23,7 @@ jobs:
       with:
         java-version: ${{ matrix.java-version }}
         distribution: 'temurin'
+        cache: 'maven'
         
     - name: Cache Maven dependencies
       uses: actions/cache@v3
@@ -35,16 +36,11 @@ jobs:
       run: ./mvnw clean test
       
     - name: Generate test report
-      uses: dorny/test-reporter@v1
+      uses: dorny/test-reporter@v2
       if: success() || failure()
       with:
         name: Maven Tests (Java ${{ matrix.java-version }})
         path: target/surefire-reports/*.xml
         reporter: java-junit
+        artifact: test-results-java-${{matrix.java-version}}
         
-    - name: Upload test results
-      uses: actions/upload-artifact@v3
-      if: always()
-      with:
-        name: test-results-java-${{ matrix.java-version }}
-        path: target/surefire-reports/

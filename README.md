@@ -1,7 +1,6 @@
 # kneedle4j
 
 [![CI](https://github.com/shravanasati/kneedle4j/actions/workflows/ci.yml/badge.svg)](https://github.com/shravanasati/kneedle4j/actions/workflows/ci.yml)
-[![Code Quality](https://github.com/shravanasati/kneedle4j/actions/workflows/quality.yml/badge.svg)](https://github.com/shravanasati/kneedle4j/actions/workflows/quality.yml)
 [![Java CI](https://img.shields.io/badge/Java-8%2B-brightgreen)](https://openjdk.java.net/)
 [![Maven](https://img.shields.io/badge/Maven-3.6%2B-blue)](https://maven.apache.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
