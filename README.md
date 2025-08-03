@@ -11,20 +11,47 @@ A robust Java implementation of the **Kneedle algorithm** for automatic detectio
 
 ### Maven
 
+Add the following repository to your `pom.xml`:
+
+```xml
+<repositories>
+	<repository>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+	</repository>
+</repositories>
+```
+
 Add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
     <groupId>com.github.shravanasati</groupId>
     <artifactId>kneedle4j</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>v0.1.0</version>
 </dependency>
 ```
 
 ### Gradle
 
+Add it in your root `settings.gradle` at the end of repositories:
+
 ```gradle
-implementation 'com.github.shravanasati:kneedle4j:1.0-SNAPSHOT'
+dependencyResolutionManagement {
+	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+	repositories {
+		mavenCentral()
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+
+Add the dependency:
+
+```gradle
+dependencies {
+	implementation 'com.github.shravanasati:kneedle4j:v0.1.0'
+}
 ```
 
 ## 🚀 Quick Start
