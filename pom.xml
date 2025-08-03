@@ -6,10 +6,18 @@
 
   <groupId>com.github.shravanasati</groupId>
   <artifactId>kneedle4j</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
 
   <name>kneedle4j</name>
+  <description>Java implementation of the kneedle algorithm for detecting knee points in data.</description>
   <url>https://github.com/shravanasati/kneedle4j</url>
+
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
